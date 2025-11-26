@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babcock Academy Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <h1>Babcock Academy</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#portal">Student Portal</a></li>
+                    <li><a href="#announcements">Announcements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section" id="home">
+        <div class="container">
+            <h2>Welcome to Your Digital Learning Hub</h2>
+            <p>Access your grades, timetable, resources, and stay up-to-date with the latest school news.</p>
+            <a href="#portal-login" class="cta-button">Log In Now</a>
+        </div>
+    </section>
+
+    <main class="main-content" id="portal">
+        <div class="container main-grid">
+            
+            <div class="card login-panel" id="portal-login">
+                <h3>Student/Staff Login</h3>
+                <form action="dashboard.html" method="GET"> 
+                    <label for="id">Student/Staff ID</label>
+                    <input type="text" id="id" name="id" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit" class="cta-button">Secure Login</button>
+                </form>
+               <a href="forgot.html">Forgot Password?</a>
+            </div>
+
+            <div class="card announcements-panel" id="announcements">
+                <h3>📢 Latest Announcements</h3>
+                <ul>
+                    <li>**27/11/2025:** Second Semester Exam Timetable Released. <a href="#"></a></li>
+                    <li>**20/11/2025:** Mandatory Parent-Teacher Meeting on Dec 5th.</li>
+                    <li>**15/11/2025:** New Library E-Books Catalog is now available.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="container">
+            <p>&copy; 2025 Babcock Academy Web Design Group 2. All Rights Reserved.</p>
+            <p>Support: <a href="mailto:support@babcockacademy.edu">support@babcockacademy.edu</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
